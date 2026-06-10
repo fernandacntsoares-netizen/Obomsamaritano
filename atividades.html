@@ -1,150 +1,134 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividades | O Bom Samaritano</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.activities-hero{
+  min-height:400px;
+  display:flex;
+  align-items:center;
+  padding:80px 5vw;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.95),
+      rgba(255,255,255,.75) 50%,
+      rgba(255,255,255,.15)
+    ),
+    url("images/banner-atividades.jpg") center/cover;
+}
+
+.activities-copy{
+  max-width:650px;
+}
+
+.activities-copy h1{
+  color:#0b3b82;
+  margin-bottom:16px;
+}
+
+.activities-copy p{
+  color:#444;
+  line-height:1.8;
+}
+
+.activities-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  max-width:1200px;
+  margin:70px auto;
+  padding:0 5vw;
+}
+
+.activity-card{
+  background:white;
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.activity-card h2{
+  color:#0b3b82;
+  margin-bottom:12px;
+}
+
+.activity-card p{
+  color:#555;
+  line-height:1.7;
+}
+
+.activity-card a{
+  display:inline-block;
+  margin-top:16px;
+  color:#0b3b82;
+  font-weight:700;
+  text-decoration:none;
+}
+
+</style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="pt-BR"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;Atividades | O Bom Samaritano&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;link rel="stylesheet" href="style.css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">.activities-hero{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>min-height:400px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding:80px 5vw;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background:</p>
-<p class="p1"><span class="Apple-converted-space">    </span>linear-gradient(</p>
-<p class="p1"><span class="Apple-converted-space">      </span>90deg,</p>
-<p class="p1"><span class="Apple-converted-space">      </span>rgba(255,255,255,.95),</p>
-<p class="p1"><span class="Apple-converted-space">      </span>rgba(255,255,255,.75) 50%,</p>
-<p class="p1"><span class="Apple-converted-space">      </span>rgba(255,255,255,.15)</p>
-<p class="p1"><span class="Apple-converted-space">    </span>),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>url("images/banner-atividades.jpg") center/cover;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activities-copy{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>max-width:650px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activities-copy h1{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:#0b3b82;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:16px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activities-copy p{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:#444;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.8;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activities-grid{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns:repeat(auto-fit,minmax(260px,1fr));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>gap:24px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>max-width:1200px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin:70px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding:0 5vw;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activity-card{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius:16px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding:28px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>box-shadow:0 10px 30px rgba(0,0,0,.08);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activity-card h2{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:#0b3b82;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:12px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activity-card p{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:#555;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.7;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.activity-card a{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display:inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin-top:16px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:#0b3b82;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-weight:700;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-decoration:none;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="activities-hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="activities-copy"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Nossas Atividades&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>A Fraternidade Espírita O Bom Samaritano oferece atividades de</p>
-<p class="p1"><span class="Apple-converted-space">      </span>acolhimento, estudo, tratamento espiritual e evangelização,</p>
-<p class="p1"><span class="Apple-converted-space">      </span>voltadas a pessoas de todas as idades.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="activities-grid"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;article class="activity-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Triagem Fraterna&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Porta de entrada para quem deseja iniciar o Tratamento Espiritual</p>
-<p class="p1"><span class="Apple-converted-space">      </span>ou conhecer melhor as atividades da Casa.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="triagem.html"&gt;Saiba mais →&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;article class="activity-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Reunião Pública&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Momento de estudo, reflexão e aprendizado à luz do Evangelho.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;article class="activity-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Tratamento Espiritual&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Atendimento espiritual realizado com orientação e acompanhamento.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;article class="activity-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Evangelização Infantil&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Atividades voltadas ao desenvolvimento moral e espiritual das crianças.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;article class="activity-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Mocidade Espírita&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Espaço de estudo, convivência e troca de experiências para jovens.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<section class="activities-hero">
+  <div class="activities-copy">
+    <h1>Nossas Atividades</h1>
+
+    <p>
+      A Fraternidade Espírita O Bom Samaritano oferece atividades de
+      acolhimento, estudo, tratamento espiritual e evangelização,
+      voltadas a pessoas de todas as idades.
+    </p>
+  </div>
+</section>
+
+<section class="activities-grid">
+
+  <article class="activity-card">
+    <h2>Triagem Fraterna</h2>
+    <p>
+      Porta de entrada para quem deseja iniciar o Tratamento Espiritual
+      ou conhecer melhor as atividades da Casa.
+    </p>
+    <a href="triagem.html">Saiba mais →</a>
+  </article>
+
+  <article class="activity-card">
+    <h2>Reunião Pública</h2>
+    <p>
+      Momento de estudo, reflexão e aprendizado à luz do Evangelho.
+    </p>
+  </article>
+
+  <article class="activity-card">
+    <h2>Tratamento Espiritual</h2>
+    <p>
+      Atendimento espiritual realizado com orientação e acompanhamento.
+    </p>
+  </article>
+
+  <article class="activity-card">
+    <h2>Evangelização Infantil</h2>
+    <p>
+      Atividades voltadas ao desenvolvimento moral e espiritual das crianças.
+    </p>
+  </article>
+
+  <article class="activity-card">
+    <h2>Mocidade Espírita</h2>
+    <p>
+      Espaço de estudo, convivência e troca de experiências para jovens.
+    </p>
+  </article>
+
+</section>
+
 </body>
 </html>
