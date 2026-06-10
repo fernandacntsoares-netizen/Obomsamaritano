@@ -82,7 +82,7 @@ a{text-decoration:none;color:inherit}
   padding:80px 5vw;
   background:
     linear-gradient(90deg,rgba(255,255,255,.96),rgba(255,255,255,.82) 45%,rgba(255,255,255,.18)),
-    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80") center/cover;
+    url("images/Hero principal.png") center/cover;
 }
 .hero-copy{max-width:680px}
 .tag{
