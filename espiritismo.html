@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espiritismo | O Bom Samaritano</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .spirit-hero{
+      background:#f8f6f1;
+      padding:80px 5vw 70px;
+      text-align:center;
+    }
+
+    .spirit-hero h1{
+      font-size:clamp(2.2rem,5vw,4rem);
+      line-height:1.05;
+      color:#0b3b82;
+      margin:0 0 18px;
+    }
+
+    .spirit-hero p{
+      max-width:850px;
+      margin:0 auto;
+      color:#555;
+      font-size:1.15rem;
+      line-height:1.7;
+    }
+
+    .spirit-content{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 5vw;
+    }
+
+    .spirit-section{
+      margin-bottom:60px;
+    }
+
+    .spirit-section h2{
+      color:#0b3b82;
+      font-size:2rem;
+      margin-bottom:18px;
+    }
+
+    .spirit-section p{
+      color:#444;
+      line-height:1.8;
+      font-size:1.05rem;
+    }
+
+    .spirit-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:24px;
+      margin-top:28px;
+    }
+
+    .spirit-card{
+      background:#fff;
+      border-radius:18px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .spirit-card h3{
+      color:#0b3b82;
+      margin-bottom:12px;
+    }
+
+    .spirit-card p{
+      color:#555;
+      line-height:1.7;
+    }
+
+    .spirit-actions{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-top:24px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-symbol">☀</span>
+    <span>
+      <strong>O Bom Samaritano</strong>
+      <small>Vivenciando a Doutrina Espírita em família</small>
+    </span>
+  </a>
+
+  <nav class="nav">
+    <a href="sobre.html">Sobre nós</a>
+    <a href="atividades.html">Atividades</a>
+    <a href="espiritismo.html">Espiritismo</a>
+    <a href="index.html#programacao">Programação</a>
+    <a href="index.html#contato">Contato</a>
+  </nav>
+
+  <a class="btn small" href="colaborar.html">Quero ajudar</a>
+</header>
+
+<main>
+
+  <section class="spirit-hero">
+    <h1>Conheça o Espiritismo</h1>
+    <p>
+      Uma doutrina que convida ao estudo, à reflexão, à prática da caridade
+      e ao desenvolvimento espiritual por meio dos ensinamentos de Jesus.
+    </p>
+  </section>
+
+  <section class="spirit-content">
+
+    <div class="spirit-section">
+      <h2>O que é o Espiritismo?</h2>
+      <p>
+        O Espiritismo é uma doutrina de caráter filosófico, científico e religioso,
+        codificada por Allan Kardec, que busca compreender a vida espiritual,
+        a imortalidade da alma, a reencarnação e a lei de causa e efeito.
+      </p>
+      <p>
+        Seu estudo nos convida ao autoconhecimento, à responsabilidade diante da vida
+        e à prática do bem em nossas relações diárias.
+      </p>
+    </div>
+
+    <div class="spirit-section">
+      <h2>Como começar?</h2>
+
+      <div class="spirit-grid">
+        <div class="spirit-card">
+          <h3>Participe das reuniões públicas</h3>
+          <p>
+            As reuniões públicas são momentos de estudo, reflexão e fortalecimento espiritual.
+          </p>
+          <div class="spirit-actions">
+            <a class="btn" href="index.html#programacao">Ver programação</a>
+          </div>
+        </div>
+
+        <div class="spirit-card">
+          <h3>Conheça as atividades educacionais</h3>
+          <p>
+            A Fraternidade oferece atividades de estudo, evangelização e formação
+            para diferentes idades e momentos da caminhada.
+          </p>
+          <div class="spirit-actions">
+            <a class="btn ghost" href="atividades.html">Ver atividades</a>
+          </div>
+        </div>
+
+        <div class="spirit-card">
+          <h3>Primeira visita?</h3>
+          <p>
+            A Triagem Fraterna é uma porta de entrada para quem busca orientação,
+            acolhimento e encaminhamento dentro da Casa.
+          </p>
+          <div class="spirit-actions">
+            <a class="btn ghost" href="triagem.html">Conhecer a Triagem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spirit-section">
+      <h2>Obras básicas</h2>
+      <p>
+        Para quem deseja iniciar seus estudos, as obras de Allan Kardec são a base
+        da Doutrina Espírita e ajudam a compreender seus principais fundamentos.
+      </p>
+
+      <div class="spirit-grid">
+        <div class="spirit-card">
+          <h3>O Livro dos Espíritos</h3>
+          <p>Apresenta os princípios fundamentais da Doutrina Espírita.</p>
+        </div>
+
+        <div class="spirit-card">
+          <h3>O Evangelho Segundo o Espiritismo</h3>
+          <p>Reflete sobre os ensinamentos morais de Jesus à luz do Espiritismo.</p>
+        </div>
+
+        <div class="spirit-card">
+          <h3>O Livro dos Médiuns</h3>
+          <p>Trata da mediunidade e da comunicação com o mundo espiritual.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Fraternidade Espírita O Bom Samaritano</p>
+</footer>
+
+</body>
+</html>
