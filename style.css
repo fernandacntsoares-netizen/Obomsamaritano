@@ -76,7 +76,7 @@ a{text-decoration:none;color:inherit}
 .btn.light{background:white;color:var(--blue);box-shadow:none}
 
 .hero{
-  min-height:650px;
+  min-height:520px;
   display:flex;
   align-items:center;
   padding:80px 5vw;
