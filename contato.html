@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | O Bom Samaritano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="form-page">
+    <section class="form-card">
+      <span class="brand-symbol">☀</span>
+
+      <h1>Fale conosco</h1>
+      <p>
+        Envie sua mensagem para a Fraternidade Espírita O Bom Samaritano.
+        Seus dados serão usados apenas para responder ao seu contato.
+      </p>
+
+      <form id="contactForm">
+        <label>
+          Nome completo
+          <input type="text" name="nome" required>
+        </label>
+
+        <label>
+          E-mail
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Telefone
+          <input type="tel" name="telefone">
+        </label>
+
+        <label>
+          Assunto
+          <select name="assunto" required>
+            <option value="">Selecione</option>
+            <option>Casa Espírita</option>
+            <option>Quadro Social</option>
+            <option>Voluntariado</option>
+            <option>Doações</option>
+            <option>Outros</option>
+          </select>
+        </label>
+
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="5" required></textarea>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="consentimento" required>
+          Li e aceito a Política de Privacidade e autorizo o uso dos meus dados para resposta a este contato.
+        </label>
+
+        <button type="submit">Enviar mensagem</button>
+
+        <p id="formStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    const scriptURL = "COLE_AQUI_A_URL_DO_APPS_SCRIPT";
+
+    document.getElementById("contactForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const status = document.getElementById("formStatus");
+
+      status.textContent = "Enviando...";
+
+      const data = new FormData(form);
+      data.append("dataHora", new Date().toISOString());
+
+      try {
+        await fetch(scriptURL, {
+          method: "POST",
+          body: data
+        });
+
+        status.textContent = "Mensagem enviada com sucesso. Obrigada!";
+        form.reset();
+      } catch (error) {
+        status.textContent = "Não foi possível enviar. Tente novamente mais tarde.";
+      }
+    });
+  </script>
+</body>
+</html>
